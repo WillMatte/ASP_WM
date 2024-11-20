@@ -1,14 +1,16 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+
+import MenuCompenent from "@/components/MenuCompenent.vue";
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
+  <header class="bg-primary">
+    <div class="container-lg">
+      <MenuCompenent/>
     </div>
   </header>
-  <main>
-    <RouterView />
+  <main class="container-lg">
+    <RouterView/>
   </main>
 </template>
 
