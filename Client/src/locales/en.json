@@ -1,6 +1,13 @@
 ﻿{
-  "home" : "Home",
-  "login" : "Login",
+  "home": "Home",
+  "login": "Login",
+  "loginAction": "Login",
   "logout": "Logout",
-  "signup": "Signup"
+  "signup": "Signup",
+  "email": "Email address",
+  "emptyEmailError": "Please enter an email address",
+  "password": "Password",
+  "emptyPasswordError": "Please enter a password",
+  "loginError": "The email address and the password do not match",
+  "serverError": "Server error, please try again later"
 }

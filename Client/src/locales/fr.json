@@ -1,6 +1,13 @@
 ﻿{
-  "home" : "Accueil",
-  "login" : "Connexion",
+  "home": "Accueil",
+  "login": "Connexion",
+  "loginAction": "Se connecter",
   "logout": "Déconnexion",
-  "signup": "Créer un compte"
+  "signup": "Créer un compte",
+  "email": "Adresse courriel",
+  "emptyEmailError": "Veuillez entrer votre adresse courriel",
+  "password": "Mot de passe",
+  "emptyPasswordError": "Veuillez entrer votre mot de passe",
+  "loginError": "L'adresse courriel et le mot de passe ne concordent pas",
+  "serverError": "Erreur de serveur, veuillez essayer plus tard"
 }

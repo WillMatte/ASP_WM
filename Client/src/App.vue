@@ -1,19 +1,16 @@
 <script setup>
-
-import MenuCompenent from "@/components/MenuCompenent.vue";
+import MenuCompenent from '@/components/MenuCompenent.vue'
 </script>
 
 <template>
   <header class="bg-primary">
     <div class="container-lg">
-      <MenuCompenent/>
+      <MenuCompenent />
     </div>
   </header>
   <main class="container-lg">
-    <RouterView/>
+    <RouterView />
   </main>
 </template>
 
-<style scoped lang="sass">
-
-</style>
+<style scoped lang="sass"></style>
