@@ -1,4 +1,6 @@
-﻿<script setup></script>
+﻿<script setup>
+import LanguageSelectionComponent from "@/components/LanguageSelectionComponent.vue";
+</script>
 
 import { RouterLink } from 'vue-router'
 
@@ -10,6 +12,7 @@ import { RouterLink } from 'vue-router'
       <RouterLink to="/login">{{ $t('login') }}</RouterLink>
       <RouterLink to="/signup">{{ $t('signup') }}</RouterLink>
       <RouterLink to="/">{{ $t('logout') }}</RouterLink>
+      <LanguageSelectionComponent/>
     </nav>
   </div>
 </template>
@@ -23,6 +26,8 @@ import { RouterLink } from 'vue-router'
     color: white
     text-decoration: none
   nav
+    display: flex
+    justify-content: space-evenly
     a
       margin: 0 1.3rem 0 1.3rem
 </style>
