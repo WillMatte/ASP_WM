@@ -1,5 +1,24 @@
 ﻿<script setup>
-import LanguageSelectionComponent from "@/components/LanguageSelectionComponent.vue";
+import LanguageSelectionComponent from '@/components/LanguageSelectionComponent.vue'
+</script>
+<script>
+import { authStore } from '@/stores/authStore.js'
+export default {
+  name: 'MenuCompenent',
+  methods: {
+    Logout() {
+      // TODO : Call the store to logout
+    },
+  },
+  created() {
+    this.store = authStore()
+  },
+  computed: {
+    IsLoggedIn() {
+      return this.store.IsLoggedIn
+    },
+  },
+}
 </script>
 
 import { RouterLink } from 'vue-router'
@@ -11,8 +30,8 @@ import { RouterLink } from 'vue-router'
       <RouterLink to="/">{{ $t('home') }}</RouterLink>
       <RouterLink to="/login">{{ $t('login') }}</RouterLink>
       <RouterLink to="/signup">{{ $t('signup') }}</RouterLink>
-      <RouterLink to="/">{{ $t('logout') }}</RouterLink>
-      <LanguageSelectionComponent/>
+      <a @click.prevent="Logout">{{ $t('logout') }}</a>
+      <LanguageSelectionComponent />
     </nav>
   </div>
 </template>
